@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Boka resa</title>
+    <script src="js/main.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="./images/logga.png" class="logo" alt="logga">
+        </a>
+        <!-- Meny knapp för att öppna mobilmenyn-->
+        <button class="menu-btn open" id="open-menu">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+            <span class="menu-text">Meny</span>
+        </button>
+        <!-- navigering -->
+        <nav id="nav-menu">
+            <!-- Knapp som visas om mobilmenyn är utfälld -->
+            <button class="menu-btn close" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+                <span class="menu-text">Stäng</span>
+            </button>
+            <ul>
+                <li><a id="current" href="index.html">Startsida</a></li>
+                <li><a href="logga_in.html">Logga in</a></li>
+                <li><a href="boka_resa.html">Boka resa</a></li>
+                <li><a href="aterkommande_resa.html">Återkomande resa</a></li>
+                <li><a href="mina_resor.html">Mina resor</a></li>
+                <li><a href="kontakta_oss.html">Kontakta oss</a></li>
+                <li><a href="tillganglighetsredogorelse.html">Tillgänglighetsredogörelse</a></li>
+            </ul>
+        </nav>
+    </header>
+            <main>
+                <h1>Boka resa</h1>
+            <div id="box4">
+                <form name="form" id="form">
+        <p>Vart vill du resa? </p>
+                            <label for="hallplats">Från hållplats/adress*</label><br>
+                                <input type="text" id="hallplats" placeholder="Från hållplats/adress" name="namn">
+                            <br>
+                            <label for="till-hallplats">Till hållplats/adress*</label><br>
+                                <input type="text" id="till-hallplats" placeholder="Till hållplats/adress" name="namn">
+                            <br>
+                            <label for="email">E-postadress:*</label><br>
+                           <input type="email" id="email" placeholder="namn@domän.se" name="email">
+                            <br>
+                        <label for="date">Datum:*</label>
+                        <input type="date" id="date" name="date"> 
+                        <label for="appt">Tid:*</label>
+                        <input type="time" id="appt" name="appt"> 
+                        <br><br>
+                        <p>Hjälpmedel (utifrån det du bevljats):</p>
+                        <input type="checkbox" id="Rullstol" name="Rullstol" value="Rullstol">
+                        <label for="Rullstol"> Rullstol</label><br>
+                        <input type="checkbox" id="Permobil" name="Permobil" value="Permobil">
+                        <label for="Permobil">Permobil</label><br>
+                        <input type="checkbox" id="Ledsagare" name="Ledsagare" value="ledsagare">
+                        <label for="Ledsagare"> Ledsagare</label>
+                        <br><br>
+                        <label for="antal">Totalt antal passagerare inklusive ledsagare och medresenärer?</label><br>
+                            <select name="antal" id="antal">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="3">5</option>
+                                <option value="4">6</option>
+                            </select>
+                        <p>Husdjur på resan?*</p>
+                        <input type="checkbox" id="Servicehund" name="Servicehund" value="Servicehund">
+                        <label for="Servicehund">Servicehund</label><br> 
+                        <input type="checkbox" id="Ledarhund" name="Ledarhund" value="Ledarhund">
+                        <label for="Ledarhund">Ledarhund</label><br> 
+                        <input type="checkbox" id="Husdjur" name="Husdjur" value="Husdjur">
+                        <label for="Husdjur">Husdjur</label><br> 
+                        <br>
+                       <label for="message">Övrigt:</label>
+                            <textarea name="message" id="message"></textarea>
+                        <br>
+                        <label for="reset">Skicka in eller rensa formulär</label>
+                        <input type="submit" class="knapp" value="Skicka">
+                        <input type="reset" id="reset" class="knapp" value="Rensa">
+                </form>
+            </div>
+        </main>
+        <footer>
+          <ul>
+            <li>Om webbplatsen</li>
+            <li><a href="tillganglighetsredogorelse.html">Tillgänglighetsredogörelse</a></li>
+            <li><a href="kontakta_oss.html">Kontakta oss</a></li>
+            <li>Telefon: 076-00 33 66</li>
+            <li>Öppettider helgfri vardag</li>
+            <li>Måndag - Fredag</li>
+            <li>9.00-13.00</li>
+        </ul>
+        </footer>
+        </body>
+        </html>    
+        
