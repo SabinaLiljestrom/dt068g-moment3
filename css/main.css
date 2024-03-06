@@ -31,7 +31,6 @@ h3 {
 
 main p, q {
     font-size: 1em;
-    padding: 2% 2% 2% 2%;
     line-height: 1.2em;
 }
 
@@ -124,7 +123,7 @@ nav a {
 }
 
 nav li:hover {
-    background-color: rgb(61, 106, 227);
+    background-color:#f4ce14;
     cursor: pointer;
 }
 
@@ -143,7 +142,7 @@ nav li:hover {
 }
 
 .menu-btn:hover {
-    background-color:   rgb(61, 106, 227);
+    background-color:   rgb(227, 191, 61);
     box-shadow: 0 0px 5px rgba(0, 0, 0, 0.421);
 }
 
@@ -311,7 +310,7 @@ input[type=time] {
   input[type=submit] {
       /*--utseende skicka knapp--*/
     width: 30%;
-    background-color: #f4ce14;
+    background-color:#f4ce14;
     color: black;
     padding: 4px 20px;
     margin: 8px 0;
@@ -322,7 +321,7 @@ input[type=time] {
   
   input[type=submit]:hover {
       /*--utseende skicka knapp mus över--*/
-    background-color: #40a9a5;
+    background-color:#d5b100
   }
   
   input[type=reset] {
@@ -339,7 +338,7 @@ input[type=time] {
   
   input[type=reset]:hover {
       /*--utseende mus över radera knapp--*/
-    background-color: #40a9a5;
+    background-color: #d5b100;
   }
 
 #expander {
