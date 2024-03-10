@@ -5,9 +5,11 @@
 }
 
 /* Huvudinnehåll*/
+
 main {
-    max-width: 900px;
-    width: 100%;
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
     font-size: 1.2em;
 }
  footer a {
@@ -18,20 +20,23 @@ p, h1, h2, h3 {
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin: 0.5em 0 0 0;
 }
 h2 {
-    margin: 1em 0 0.3em 0;
+    font-size: 1.2em;
+    margin: 4% 1% 0.5% 0px;
 }
 
 h3 {
     margin: 1em 0 0.3em 0;
 }
-
+.header {
+    width: 100%;
+}
 main p, q {
-    font-size: 1em;
-    line-height: 1.2em;
+    font-size: 1.2em;
+    line-height: 1.3em;
 }
 
 q {
@@ -40,14 +45,10 @@ q {
 section {
     margin: 1em 0;
 }
-
 .logo {
-    width: 25%;
+    width: 50%;
 }
 
-.header {
-    width: 100%;
-}
 #box1 {
     background-color: #d9d9d9;
     padding: 20px;
@@ -55,6 +56,16 @@ section {
 #box2 {
     background-color: white;
     padding: 20px;
+}
+#box3{
+    background-color: #EBEBEB;
+    max-width: 200px;
+    padding: 10px;
+    margin: 4%;
+}
+#box3:hover {
+    background-color: #F4CE14;
+    cursor: pointer;
 }
 ul {
     width: 100%;
@@ -70,7 +81,7 @@ footer {
 
 /* Utseende header */
 header {
-    height: 80px;
+    height: 135px;
     background-color: #013f10;
     margin: 0;
     position: relative;
@@ -78,13 +89,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo a {
-    color: rgb(255, 255, 255);
-    font-size: 1.3em;
-    margin: 0;
-    text-decoration: none;
 }
 
 /* Design av meny för mobilenheter, placeras till höger om skärmen */
@@ -112,6 +116,7 @@ nav ul {
 nav li {
     padding: 0.2em 0;
     width: 100%;
+    border: #013f10 solid 2px;
 }
 
 nav a {
@@ -124,6 +129,11 @@ nav a {
 
 nav li:hover {
     cursor: pointer;
+    border-color:   rgb(227, 191, 61);
+    background-color: #013f10;
+}
+nav ul a#current {
+    border:   rgb(227, 191, 61) solid 2px;;
 }
 
 /* Meny knapp, öppna meny */
@@ -141,7 +151,8 @@ nav li:hover {
 }
 
 .menu-btn:hover {
-    background-color:   rgb(227, 191, 61);
+    border-color:   rgb(227, 191, 61);
+    background-color: #013f10;
     box-shadow: 0 0px 5px rgba(0, 0, 0, 0.421);
 }
 
@@ -184,24 +195,6 @@ nav li:hover {
     position: relative;
     top: -3px;
 }
-
-/* Main content */
-main {
-    max-width: 800px;
-    width: 80%;
-    margin: 0 auto;
-    font-size: 1.2em;
-}
-
-h2 {
-    margin: 1em 0;
-}
-
-main p {
-    font-size: 1.2em;
-    line-height: 1.4em;
-}
-
 
 /* Media querys */
 
@@ -251,7 +244,8 @@ main p {
   input[type=text],
   select {
       /*--utseende lista med val--*/
-    width: 100%;
+    width: 50%;
+    min-width: 300px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -264,7 +258,8 @@ main p {
   input[type=email],
   select {
       /*--utseende emailruta--*/
-    width: 100%;
+    width: 50%;
+    min-width: 300px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -275,7 +270,8 @@ main p {
   
   textarea {
       /*--utseende textruta--*/
-    width: 100%;
+    width: 50%;
+    min-width: 300px;
     height: 150px;
     padding: 12px 20px;
     box-sizing: border-box;
@@ -287,7 +283,8 @@ main p {
 
   input[type=date] {
     /*--utseende datum väljare--*/
-    width: 100%;
+    width: 50%;
+    min-width: 300px;
     padding: 12px 20px;
     display: inline-block;
     border: 1px solid #ccc;
@@ -297,7 +294,8 @@ main p {
 
 input[type=time] {
     /*--utseende datum väljare--*/
-    width: 100%;
+    width: 50%;
+    min-width: 300px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
