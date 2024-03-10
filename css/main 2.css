@@ -31,6 +31,7 @@ h3 {
 
 main p, q {
     font-size: 1em;
+    padding: 2% 2% 2% 2%;
     line-height: 1.2em;
 }
 
@@ -123,6 +124,7 @@ nav a {
 }
 
 nav li:hover {
+    background-color:#f4ce14;
     cursor: pointer;
 }
 
@@ -309,7 +311,7 @@ input[type=time] {
   input[type=submit] {
       /*--utseende skicka knapp--*/
     width: 30%;
-    background-color:#f4ce14;
+    background-color: #EBEBEB
     color: black;
     padding: 4px 20px;
     margin: 8px 0;
@@ -320,13 +322,13 @@ input[type=time] {
   
   input[type=submit]:hover {
       /*--utseende skicka knapp mus över--*/
-    background-color:#d5b100
+    background-color:#f4ce14;
   }
   
   input[type=reset] {
       /*--utseende radera formulär knapp--*/
     width: 30%;
-    background-color: #f4ce14;
+    background-color: #EBEBEB;
     color: black;
     padding: 4px 20px;
     margin: 8px 0;
@@ -337,7 +339,7 @@ input[type=time] {
   
   input[type=reset]:hover {
       /*--utseende mus över radera knapp--*/
-    background-color: #d5b100;
+    background-color: #f4ce14;
   }
 
 #expander {
