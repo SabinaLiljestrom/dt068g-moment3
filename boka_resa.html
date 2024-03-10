@@ -36,30 +36,32 @@
                 <li><a href="index.html">Startsida</a></li>
                 <li><a href="logga_in.html">Logga in</a></li>
                 <li><a href="mina_sidor.html">Mina sidor</a></li>
+                <li><a id="current" href="boka_resa.html">Boka resa</a></li>
                 <li><a href="kontakta_oss.html">Kontakta oss</a></li>
             </ul>
         </nav>
     </header>
             <main>
-                <h1>Boka resa</h1>
+                <h1>Boka resa med färdtjänst</h1>
             <div id="box4">
+                <p>För att få rätt till att åka med färdtjänst behöver du ha ett tillstånd. <a href="index.html">Regler vem som har rätt till färdtjänst.</a></p>
                 <form name="form" id="form">
-        <p>Vart vill du resa? </p>
+        <p>Vart vill du resa? </p><br>
                             <label for="hallplats">Från hållplats/adress*</label><br>
                                 <input type="text" id="hallplats" placeholder="Från hållplats/adress" name="namn">
-                            <br>
+                            <br><br>
                             <label for="till-hallplats">Till hållplats/adress*</label><br>
                                 <input type="text" id="till-hallplats" placeholder="Till hållplats/adress" name="namn">
-                            <br>
+                            <br><br>
                             <label for="email">E-postadress:*</label><br>
                            <input type="email" id="email" placeholder="namn@domän.se" name="email">
-                            <br>
-                        <label for="date">Datum:*</label>
-                        <input type="date" id="date" name="date"> 
-                        <label for="appt">Tid:*</label>
+                            <br><br>
+                        <label for="date">Datum:*</label><br>
+                        <input type="date" id="date" name="date"> <br><br>
+                        <label for="appt">Tid:*</label><br>
                         <input type="time" id="appt" name="appt"> 
                         <br><br>
-                        <p>Hjälpmedel (utifrån det du bevljats):</p>
+                        <p>Hjälpmedel (utifrån det du beviljats):</p>
                         <input type="checkbox" id="Rullstol" name="Rullstol" value="Rullstol">
                         <label for="Rullstol"> Rullstol</label><br>
                         <input type="checkbox" id="Permobil" name="Permobil" value="Permobil">
@@ -67,7 +69,8 @@
                         <input type="checkbox" id="Ledsagare" name="Ledsagare" value="ledsagare">
                         <label for="Ledsagare"> Ledsagare</label>
                         <br><br>
-                        <label for="antal">Totalt antal passagerare inklusive ledsagare och medresenärer?</label><br>
+                        <label for="antal">Totalt antal passagerare inklusive ledsagare och medresenärer?</label>
+                        <br>
                             <select name="antal" id="antal">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -84,11 +87,11 @@
                         <input type="checkbox" id="Husdjur" name="Husdjur" value="Husdjur">
                         <label for="Husdjur">Husdjur</label><br> 
                         <br>
-                       <label for="message">Övrigt:</label>
+                       <label for="message">Övrigt:</label><br>
                             <textarea name="message" id="message"></textarea>
                         <br>
-                        <label for="reset">Skicka in eller rensa formulär</label>
-                        <input type="submit" class="knapp" value="Skicka">
+                        <label for="submit">
+                        <input type="submit" class="knapp" value="Skicka"></label>
                         <input type="reset" id="reset" class="knapp" value="Rensa">
                 </form>
             </div>
